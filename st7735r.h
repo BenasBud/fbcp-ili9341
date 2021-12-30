@@ -1,6 +1,6 @@
 #pragma once
 
-#if defined(ST7735R) || defined(ST7735S) || defined(ST7789) || defined(ST7789VW) || defined(ST7796)
+#if defined(ST7735R) || defined(ST7735S) || defined(ST7789) || defined(ST7789VW) || defined(ST7796S)
 
 // On Arduino "A000096" 160x128 ST7735R LCD Screen, the following speed configurations have been tested (on a Pi 3B):
 // core_freq=355: CDIV=6, results in 59.167MHz, works
