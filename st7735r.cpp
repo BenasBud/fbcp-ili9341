@@ -100,7 +100,7 @@ void InitST7735R()
 #endif
 
     // TODO: The 0xB1 command is not Frame Rate Control for ST7789VW, 0xB3 is (add support to it)
-#ifdef !defined(ST7789VW) || !defined(ST7796S)
+#if !defined(ST7789VW) || !defined(ST7796S)
     // Frame rate = 850000 / [ (2*RTNA+40) * (162 + FPA+BPA)]
     SPI_TRANSFER(0xB1/*FRMCTR1:Frame Rate Control*/, /*RTNA=*/6, /*FPA=*/1, /*BPA=*/1); // This should set frame rate = 99.67 Hz
 #endif
